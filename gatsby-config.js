@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "SnoopyEars",
+    siteUrl: `https://bottledhappiness.app`,
   },
   plugins: [
     {
