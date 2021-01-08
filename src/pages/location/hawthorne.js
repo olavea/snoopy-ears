@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Berkeley() {
+export default function Hawthorne() {
     return (
         <div>
-          <p>Yo</p>
+          <h1>Hawthorne</h1>
         </div>
     )
 

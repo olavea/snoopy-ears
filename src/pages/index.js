@@ -1,4 +1,6 @@
 import * as React from "react"
+import { Link } from "gatsby"
+
 
 // styles
 const pageStyles = {
@@ -100,31 +102,59 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Home Page</title>
+      <title>SnoopyEars</title>
       <h1 style={headingStyles}>
-        Congratulations
+
         <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
+        <span style={headingAccentStyles}>SnoopyEars </span>
         <span role="img" aria-label="Party popper emojis">
           🎉🎉🎉
         </span>
       </h1>
       <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
+        Ask me questions or give me <code style={codeStyles}>dev tips</code>
+        {" "}
         <span role="img" aria-label="Sunglasses smiley emoji">
           😎
         </span>
+         {" "}in this github repo:
       </p>
       <ul style={listStyles}>
         <li style={docLinkStyle}>
           <a
             style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
+            href="https://github.com/olavea/snoopy-ears/"
           >
-            {docLink.text}
+          https://github.com/olavea/snoopy-ears/
           </a>
         </li>
+        <li style={docLinkStyle}>
+          <Link
+            style={linkStyle}
+            to="/location/avalon/"
+          >
+            Avalon
+         </Link>
+        </li>
+        <li style={docLinkStyle}>
+          <Link
+            style={linkStyle}
+            to="/location/santaRosa/
+            "
+          >
+            Santa Rosa
+        </Link>
+        </li>
+        <li style={docLinkStyle}>
+          <Link
+            style={linkStyle}
+            to="/location/hawthorne/"
+          >
+            Hawthorne
+        </Link>
+        </li>
+
+
         {links.map(link => (
           <li style={{ ...listItemStyles, color: link.color }}>
             <span>

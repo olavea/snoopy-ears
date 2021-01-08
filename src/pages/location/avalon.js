@@ -3,7 +3,7 @@ import React from 'react'
 export default function Avalon() {
     return (
         <div>
-          <p>Yo</p>
+          <h1>Avalon</h1>
         </div>
     )
 

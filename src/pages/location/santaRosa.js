@@ -3,7 +3,7 @@ import React from 'react'
 export default function SantaRosa() {
     return (
         <div>
-          <p>Yo</p>
+          <h1>SantaRosa</h1>
         </div>
     )
 
