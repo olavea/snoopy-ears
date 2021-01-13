@@ -2,9 +2,9 @@
 
 // dotenv.config({ path: '.env'});
 
-// require("dotenv").config({
-//   path: `.env`,
-// })
+require("dotenv").config({
+  path: `.env`,
+})
 
 // {
 //   resolve: `gatsby-plugin-env-variables`,
