@@ -16,6 +16,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "SnoopyEars",
+    siteUrl: `https://snoopyears.gtsb.io/`,
   },
   plugins: [
 
