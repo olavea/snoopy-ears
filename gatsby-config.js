@@ -1,14 +1,30 @@
+// import dotenv from 'dotenv';
+
+// dotenv.config({ path: '.env'});
+
+require("dotenv").config({
+  path: `.env`,
+})
+
+// {
+//   resolve: `gatsby-plugin-env-variables`,
+//   options: {
+//     allowList: ["GATSBY_CONTENTFUL_SPACE_ID", "GATSBY_CONTENTFUL_ACCESS_TOKEN"]
+//   },
+// },
+
 module.exports = {
   siteMetadata: {
     title: "SnoopyEars",
-    siteUrl: `https://bottledhappiness.app`,
+    siteUrl: `https://snoopyears.gtsb.io/`,
   },
   plugins: [
+
     {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "b46zX3fRVzQZpZ2q9o9KeK-Hgoq9zIZesjmWwVWiyPI",
-        spaceId: "4zhx15eo3eqn",
+        accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
       },
     },
     "gatsby-plugin-sharp",
